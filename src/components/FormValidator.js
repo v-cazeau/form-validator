@@ -33,26 +33,38 @@ export default function FormValidator () {
                 <h2>Sign Up!</h2>
             </div>
             <div>
-                <label htmlFor= 'email'>Email</label>
+                <label 
+                    htmlFor= 'email'
+                    className='form-field'>Email</label>
+                <br/>
                 <input
                     type= 'text' name = 'email'
-                    onChange={e => setEmail(e.target.value)} />
+                    onChange={e => setEmail(e.target.value)}
+                    />
             </div>
             <div>
-                <label htmlFor= 'password'>Password</label>
+                <label 
+                    htmlFor= 'password'
+                    className='form-field'>Password</label>
+                <br/>
                 <input 
                     type='password' name= 'password'
                     onChange={e => setPassword(e.target.value)} />
 
             </div>
             <div>
-                <label htmlFor= 'password-confirm'>Password Confirm</label>
+                <label 
+                    htmlFor= 'password-confirm'
+                    className='form-field'>Password Confirm</label>
+                <br/>
                 <input 
                     type='password' name='password-confirm'
                     onChange={e => setPasswordConfirm(e.target.value)}/>
             </div>
             {message}
-            <input type='submit' value='Submit'/>
+            <input 
+                type='submit' 
+                value='Submit'/>
         </form>
     )
 }
